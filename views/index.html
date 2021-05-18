@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>비디오</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+
+<!-- 주유소 -->
+</head>
+
+<body>
+
+<section class="header">
+       
+        
+
+         <style>
+                * {padding:0;margin:0;}
+                body {background:#fff;}
+                header {width:100%;position:relative;z-index:10;}
+                .header-list {width:1200px;margin:0 auto;font-size:0;padding:15px 0;}
+                .header-list > li {font-size:12px;display:inline-block;vertical-align:middle;}
+                .header-list > li:nth-child(1) {font-size:20px;width:200px;}
+                .header-list > li:nth-child(2) {width:calc(100% - 250px);}
+                .header-list > li:nth-child(3) {width:50px;}
+                .header-list > li > div {width:auto;}
+                
+                .menu-ul {font-size:0;}
+                .menu-ul > li {font-size:12px;display:inline-block;vertical-align:middle;}
+                .menu-ul > li > a {display:block;width:auto;padding:15px;}
+                
+                input[id="menuicon"] {display:none;}
+                input[id="menuicon"] + label {display:block;position:relative;width:100%;height:40px;cursor:pointer;}
+                input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:3px;border-radius:30px;background:violet;transition:all .35s;}
+                input[id="menuicon"] + label span:nth-child(1) {top:10%;}
+                input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} /* ����ϰ� ����� �� �ִ� style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+                input[id="menuicon"] + label span:nth-child(3) {bottom:10%;}
+                input[id="menuicon"]:checked + label {z-index:2;}
+                input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+                input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+                input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+                div[class="sidebar"] {width:100%;height:0px;position:fixed;top:76px;left:0;z-index:1;transition:all .35s;overflow:hidden;}
+                input[id="menuicon"]:checked + label + div {height:300px;}
+                
+                .sitemap-ul {font-size:0;width:1200px;margin:15px auto;text-align:center;}
+                .sitemap-ul > li {font-size:12px;display:inline-block;vertical-align:top;width:20%;}
+                </style>
+                 <header>
+                        <!-- <ul class="header-list">
+                                <li><div><img src="youlogo.png" class="logo" align: left;></div></li>
+                                
+                                
+                                <li>
+                                        <div>
+                                                <ul class="menu-ul">
+                                                        <li><a href="file:///C:\0409\poli.html" class="menu1 submenu1">경찰서</a></li>
+                                                        <li><a href="#" class="menu2 submenu2">소방서</a></li>
+                                                        <li><a href="#" class="menu3 submenu3">공중화장실</a></li>
+                                                        <li><a href="#" class="menu4 submenu4">주차장</a></li>
+                                                        <li><a href="#" class="menu5 submenu5">공원</a></li>
+                                                        <li><a href="#" class="menu6 submenu6">병원</a></li>
+                                                </ul>
+                                        </div>
+                                </li>
+                                <li>
+                                        <div>
+                                                <input type="checkbox" id="menuicon">
+                                                <label for="menuicon">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                </label>
+                                                <div class="sidebar">
+                                                        <ul class="sitemap-ul">
+                                                                <li><a href="#">경찰 서울 지역</a>
+                                                                        <ul>
+                                                                                <li><a href="#">영등포구</a></li>
+                                                                                <li><a href="#">구로구</a></li>
+                                                                                <li><a href="#">동작구</a></li>
+                                                                                <li><a href="#">용산구</a></li>
+                                                                                <li><a href="file:///C:\0409\poli.html">강서구</a></li>
+                                                                        </ul>
+                                                                </li>
+                                                                <li><a href="#">sitemap02</a>
+                                                                        <ul>
+                                                                                <li><a href="#">02-01</a></li>
+                                                                                <li><a href="#">02-02</a></li>
+                                                                                <li><a href="#">02-03</a></li>
+                                                                                <li><a href="#">02-04</a></li>
+                                                                                <li><a href="#">02-05</a></li>
+                                                                        </ul>
+                                                                </li>
+                                                                <li><a href="#">sitemap03</a>
+                                                                        <ul>
+                                                                                <li><a href="#">03-01</a></li>
+                                                                                <li><a href="#">03-02</a></li>
+                                                                                <li><a href="#">03-03</a></li>
+                                                                                <li><a href="#">03-04</a></li>
+                                                                                <li><a href="#">03-05</a></li>
+                                                                        </ul>
+                                                                </li>
+                                                                <li><a href="#">sitemap04</a>
+                                                                        <ul>
+                                                                                <li><a href="#">04-01</a></li>
+                                                                                <li><a href="#">04-02</a></li>
+                                                                                <li><a href="#">04-03</a></li>
+                                                                                <li><a href="#">04-04</a></li>
+                                                                                <li><a href="#">04-05</a></li>
+                                                                        </ul>
+                                                                </li>
+                                                                <li><a href="#">sitemap05</a>
+                                                                        <ul>
+                                                                                <li><a href="#">05-01</a></li>
+                                                                                <li><a href="#">05-02</a></li>
+                                                                                <li><a href="#">05-03</a></li>
+                                                                                <li><a href="#">05-04</a></li>
+                                                                                <li><a href="#">05-05</a></li>
+                                                                        </ul>
+                                                                </li>
+                                                        </ul>
+                                                </div>			
+                                        </div>
+                                </li>
+                        </ul> -->
+                </header> 
+
+          
+        <video autoplay loop class="video-background" muted plays-inline >
+        <source src="Clouds copy.mp4" type="video/mp4" v>    
+        </video>
+        <div class="container">
+                <a href="/bar" class="btn btn-sub4"></a>
+                
+                <span class="text1"> Map of The Soul</span>
+                <span class="text3"> 다양한 지도!</span>
+                <span class="text2">화면을 클릭 해 주세요!</span>
+        
+        <div class="welcome-msg">
+       
+                <!-- <a href="file:///c:\0409\poli.html" class="btn btn-sub1">경찰서</a>
+                        
+                
+                
+
+                <a href="https://www.naver.com/" class="btn btn-sub2">화면 클릭</a>
+                <a href="file:///C:/0409/startbootstrap-resume-master/dist/index.html" class="btn btn-sub3">통합 지도</a> 
+         -->
+                
+        </div>
+       
+
+       
+       
+                <!-- <h1>  Map of The Soul</h1> -->
+         
+        </div>
+        
+        <!-- <div class="container">
+                <span class="text1">안녕하세요 하잇!</span>
+                <span class="text2">함승현</span>
+        </div> -->
+        
+         
+        
+        
+            
+
+            
+            
+</section>
+
+        
+
+
+
+</body>
+
+</html>

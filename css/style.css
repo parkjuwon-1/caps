@@ -1,0 +1,419 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.header
+{
+   
+      background: rgba(75, 75, 76, 0.4);  
+    
+    height: 100vh;
+}
+.video-background
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9)
+{
+    .video-background
+    {
+         width: 100%;
+        height: auto; 
+    }
+}
+@media (max-aspect-ratio:16/9)
+{
+    .video-background
+    {
+         width: auto;
+        height: 100%; 
+    }
+}
+
+.logo
+{
+    margin: 0px;
+    height: 60px;
+    
+} 
+
+.welcome-msg
+{
+    position: relative;
+    text-align: center;
+    font-family: monospace;
+    color: red;
+    top : 15px;
+}
+.welcome-msg h1
+{
+    font-size: 80px;
+    font-weight: 100;
+    letter-spacing:  5px;
+    margin-bottom: 30px;
+}
+.btn
+{
+    font-size:  35px;
+    color:#fff;
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    /* border: 1px solid pink; 선 테두리 */
+    border-radius: 25px;
+}
+.btn-sub1:hover
+{
+    background: #ff6781;
+    color: black;
+    transition: .5s;
+}
+.btn-sub2:hover
+{
+    background: #ff6781;
+    transition: .5s;
+    color: black;
+
+}
+.btn-sub3:hover
+{
+    background: #ff6781;
+    transition: .5s;
+    color: black;
+
+}
+.btn-sub4
+{
+    /* background: #ff6781; */
+    transition: .5s;
+    color: black;
+    padding: 45%;
+
+}
+.menu1
+{
+    font-size:  10px;
+    color:#fff;
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 25px;  
+}
+.menu2
+{
+    font-size:  10px;
+    color:#fff;
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 25px;  
+}
+.menu3
+{
+    font-size:  10px;
+    color:#fff;
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 25px;  
+}
+.menu4
+{
+    font-size:  10px;
+    color:#fff;
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 25px;  
+}
+.menu5
+{
+    font-size:  10px;
+    color:#fff;
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 25px;  
+}
+.menu6
+{
+    font-size:  10px;
+    color:#fff;
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 25px;  
+}
+.submenu1:hover
+{
+    background: #4fc3f7;
+    color: black;
+    transition: .5s;
+}
+.submenu2:hover
+{
+    background: #4fc3f7;
+    color: black;
+    transition: .5s;
+}
+.submenu3:hover
+{
+    background: #4fc3f7;
+    color: black;
+    transition: .5s;
+}
+.submenu4:hover
+{
+    background: #4fc3f7;
+    color: black;
+    transition: .5s;
+}
+.submenu5:hover
+{
+    background: #4fc3f7;
+    color: black;
+    transition: .5s;
+}
+.submenu6:hover
+{
+    background: #4fc3f7;
+    color: black;
+    transition: .5s;
+}
+.container span{
+    
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+}
+.text1{
+    margin: 10%;
+    color: white;
+    font-size: 600%;
+    font-weight: 800;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    /* background: black; */
+    
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXwiSJ64Jq6b7-xetKiD0ka7VKCj0jyAPeqjUGxg6IKBaqmtIAJL65vRahx5EDoXpYjeQ&usqp=CAU");
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:  animate 4s linear infinite; 
+    
+    position: relative;
+    animation: text 3s 1; 
+}
+.text3{
+    margin: 10%;
+    color: white;
+    font-size: 600%;
+    font-weight: 800;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    /* background: black; */
+    
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXwiSJ64Jq6b7-xetKiD0ka7VKCj0jyAPeqjUGxg6IKBaqmtIAJL65vRahx5EDoXpYjeQ&usqp=CAU");
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:  animate 4s linear infinite; 
+    
+    position: relative;
+    animation: text 3s 1; 
+}
+@keyframes animate{
+    from{
+        background-position: 0% 50%;
+    }
+    to{
+       background-position: 100% 50% 0%;
+    }
+} 
+.text2{
+    font-size: 50px;
+    color: blue;
+    background: url("https://mblogthumb-phinf.pstatic.net/MjAxODAzMzBfNDEg/MDAxNTIyMzg0MzU1NDc4.o7cPdAS7PHpO2VOwCYT8by4hfGdQHqz0zPJxrkGIJR0g.49EE8rUrKqAassxyN3Mb63tZqw9vOTpINIEyTvMrgvUg.JPEG.mercy_eje/6c6eb00f3686baf863133cd14a66eb94.jpg?type=w800");
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:  animate 4s linear infinite; 
+}
+@keyframes text{
+    0%{
+        color:black;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+ /* @keyframes btn1 {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }  */
+  @keyframes move {}
+
+
+   article.accordion
+  {
+     
+     float: left;
+       display: block; 
+      width: 43em;
+      margin: 10 auto;
+      background-color:red;
+      overflow: auto;
+      border-radius: 5px;
+      left: 30;
+      box-shadow: 0 5px 3px rgba(0,0,0,0.3);
+      -webkit-transform-origin: 0 0;
+      -moz-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+      -o-transform-origin: 0 0;
+      transform-origin: 0 0;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      
+  }
+  article.accordion section
+  {
+      position: relative;
+      display: block;
+      float: left;
+      width: 2em;
+      height: 12em;
+      margin: 0.5em 0 0.5em 0.5em;
+      color: #333;
+      background-color: #333;
+      overflow: hidden;
+      border-radius: 5px;
+     
+      
+  }
+  article.accordion section h2
+  {
+      position: absolute;
+      font-size: 1em;
+      font-weight: bold;
+      width: 12em;
+      height: 2em;
+      top: 12em;
+      left: 0;
+      text-indent: 1em;
+      padding: 0;
+      margin: 0;
+      color: #ddd;
+      -webkit-transform-origin: 0 0;
+      -moz-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+      -o-transform-origin: 0 0;
+      transform-origin: 0 0;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+  }
+  article.accordion section h2 a
+  {
+      display: block;
+      width: 100%;
+      line-height: 2em;
+      text-decoration: none;
+      color: inherit;
+      outline: 0 none;
+  }
+  article.accordion section:target
+  {
+      width: 30em;
+      padding: 0 1em;
+      color: #333;
+      background-color: #fff;
+  }
+  article.accordion section:target h2
+  {
+      position: static;
+      font-size: 1.3em;
+      text-indent: 0;
+      color: #333;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  article.accordion section,
+  article.accordion section h2
+  {
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+  }
+
+
+   
+
+
+   /* .tiledBackground {
+    background-image: url(https://mdn.mozillademos.org/files/8971/firefox_logo.png);
+    background-size: 300px 150px;;
+    width: 2000px;
+    height: 3000px;
+    border: 2px solid;
+    color: pink;
+    z-index: 0;
+  } */
+
+  /* .video-background1
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9)
+{
+    .video-background
+    {
+         width: 100%;
+        height: auto; 
+    }
+}
+@media (max-aspect-ratio:16/9)
+{
+    .video-background
+    {
+         width: auto;
+        height: 100%; 
+    }
+} */
